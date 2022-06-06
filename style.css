@@ -1,0 +1,116 @@
+:root {
+    /* Primary */
+    --dark-violet: hsl(256, 26%, 20%);
+    --grayish-blue: hsl(216, 30%, 68%);
+
+    /* Neutral */
+    --very-dark-violet: hsl(270, 9%, 17%);
+    --dark-grayish-violet: hsl(273, 4%, 51%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main header {
+    border-bottom: 1px solid peru;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+main header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+main header nav .menu {
+    list-style: none
+}
+
+main header nav .menu li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 24px;
+    letter-spacing: 2px;
+
+}
+
+main header nav .menu li a{
+    text-decoration: none;
+    color: var(--dark-grayish-violet)
+}
+
+main header nav .menu li a:last-child {
+    color: var(--dark-violet)
+}
+
+main header nav .menu li:last-child {
+    padding: 10px 20px;
+    border: 3px solid var(--dark-violet);
+    font-weight: 700;
+}
+
+/* ---------HERO SECTION -------- */
+
+.section-hero {
+    background: var(--dark-violet);
+    color: #FFF;
+    height: 400PX;
+}
+
+.section-hero .hero-container .hero-info .line-hero {
+    padding-top: 24px;
+    width: 120px;
+    border: none;
+    border-bottom: 1px solid white;
+    text-align: left;
+}
+.section-hero .hero-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-hero .hero-container .hero-info, .section-hero .hero-container .hero-img {
+    width: 48%;
+}
+
+.section-hero .hero-container .hero-info .hero-title {
+    font-size: 48px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+.section-hero .hero-container .hero-info .line-hero {
+    position: absolute;
+    padding-top: 4px;
+}
+
+.section-hero .hero-container .hero-img img {
+    width: 80%;
+    position: relative;
+}
