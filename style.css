@@ -23,7 +23,6 @@ body {
     padding: 0;
     font-family: 'Karla', sans-serif;
     font-size: 16px;
-    margin: 0 auto;
     width: 100%;
 }
 
@@ -38,7 +37,8 @@ main header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 80%;
+    max-width: 1440px;
 }
 
 main header nav .menu {
@@ -50,7 +50,6 @@ main header nav .menu li {
     text-transform: uppercase;
     margin-right: 24px;
     letter-spacing: 2px;
-
 }
 
 main header nav .menu li a{
@@ -64,8 +63,9 @@ main header nav .menu li a:last-child {
 
 main header nav .menu li:last-child {
     padding: 10px 20px;
-    border: 3px solid var(--dark-violet);
+    border: 2px solid var(--dark-violet);
     font-weight: 700;
+    margin-right: 0px;
 }
 
 /* ---------HERO SECTION -------- */
@@ -73,44 +73,66 @@ main header nav .menu li:last-child {
 .section-hero {
     background: var(--dark-violet);
     color: #FFF;
-    height: 400PX;
+    height: 500px;
+    padding-top: 82px;
 }
 
-.section-hero .hero-container .hero-info .line-hero {
-    padding-top: 24px;
-    width: 120px;
-    border: none;
-    border-bottom: 1px solid white;
-    text-align: left;
-}
 .section-hero .hero-container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border: 1px solid red;
+    align-items: flex-start;
     position: relative;
-    overflow: hidden;
-}
-
-.section-hero .hero-container .hero-info, .section-hero .hero-container .hero-img {
-    width: 48%;
-}
-
-.section-hero .hero-container .hero-info .hero-title {
-    font-size: 48px;
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    line-height: 42px;
+    max-width: 1440px;
 }
 
 .section-hero .hero-container .hero-info .line-hero {
-    position: absolute;
-    padding-top: 4px;
+    width: 150px;
+    border: none;
+    border-bottom: 1px solid white;
+    text-align: left;
+    margin: 0;
 }
 
-.section-hero .hero-container .hero-img img {
+.section-hero .hero-container .hero-info, .section-hero .hero-container .hero-img  {
+    width: 50%;
+}
+
+.section-hero .hero-container .hero-img {
+    text-align: end;
+}
+.section-hero .hero-container .hero-img img{
     width: 80%;
-    position: relative;
+}
+
+.section-hero .hero-container .hero-info .hero-title {
+    font-size: 72px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    line-height: 74px;
+    margin-bottom: 36px;
+    color: var(--very-light-gray)
+}
+
+.section-hero .hero-container .hero-info .hero-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--very-light-gray);
+    line-height: 28px;
+    width: 81%;
+}
+
+.section-hero .hero-container .hero-info .hero-btn {
+    margin-top: 16px;
+    padding: 12px 20px;
+    border: 3px solid var(--dark-violet);
+    width: 150px;
+    font-weight: 400;
+    background: transparent;
+    border: 1px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer
 }
