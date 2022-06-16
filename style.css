@@ -10,7 +10,8 @@
 }
 
 .attribution {
-    font-size: 11px; text-align: center;
+    font-size: 11px;
+    text-align: center;
 }
 
 .attribution a {
@@ -92,6 +93,7 @@ main header nav .menu li:last-child {
     align-items: flex-start;
     position: relative;
     max-width: 1440px;
+    overflow: hidden;
 }
 
 .hero__line {
@@ -123,26 +125,25 @@ main header nav .menu li:last-child {
 .hero__btn {
     margin-top: 16px;
     padding: 12px 20px;
-    border: 3px solid var(--dark-violet);
     width: 150px;
-    font-weight: 400;
     background: transparent;
-    border: 1px solid var(--very-light-gray);
+    
     color: var(--very-light-gray);
     text-transform: uppercase;
     letter-spacing: 2px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 /* -------------------------------- SERVICES -------------------------------- */
 
 .services__container{
-    padding-top: 120px;
+    padding-top: 240px;
     width: 80%;
     margin: 0 auto;
     display: block;
     position: relative;
     max-width: 1440px;
+    overflow: hidden;
 }
 
 .services__line {
@@ -153,10 +154,22 @@ main header nav .menu li:last-child {
     margin: 0;
 }
 
-.services__icons {
+.icon {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.icon__container {
+    margin-right: 42px;
+}
+
+.icon__title {
+    font-family: 'DM Serif Display', serif;
+}
+
+.icon__description {
+    color: #7f7f7f;
+    line-height: 24px;
 }
 
 ion-icon {
@@ -165,4 +178,27 @@ ion-icon {
     border-radius: 50%;
     background-color: var(--grayish-blue);
     font-size: 24px;
+}
+
+/* -------------------------------- WORK -------------------------------- */
+
+.work {
+    margin-top: 120px;
+    height: 220px;
+    background: var(--dark-violet);
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    overflow: hidden;
+}
+
+.work__title {
+    width: 58%;
+}
+
+.work__btn {
+    width: auto;
+    border: 2px solid var(--very-light-gray);
 }
